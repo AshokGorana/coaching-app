@@ -1,4 +1,5 @@
 // import HoverSection from "./HoverSection";
+import type { JSX } from "react";
 
 interface NavItemProps {
   id: string;
@@ -11,10 +12,10 @@ interface NavItemProps {
 export default function NavItem({
   id,
   label,
-  items,
+  items: _items,
   isActive,
   onToggle,
-}: NavItemProps) {
+}: NavItemProps): JSX.Element {
   const handleClick = () => {
     onToggle(id);
   };

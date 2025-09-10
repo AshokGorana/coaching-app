@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import { navItems } from "./navConfig";
-import NavItem from "./NavItem";
+import NavItem from "../navigation/NavItem";
 import NavButton from "./NavButton";
 // import MobileMenu from "./MobileMenu";
 
@@ -15,7 +15,7 @@ interface NavItemType {
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string>("");
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [, setMenuOpen] = useState<boolean>(false);
   const navRef = useRef<HTMLElement | null>(null);
 
   const handleDropdownToggle = useCallback((itemId: string) => {
@@ -79,7 +79,7 @@ export default function Navbar() {
                 key={item.id}
                 id={item.id}
                 label={item.label}
-                items={item.items}
+                items={item.items ?? []}
                 isActive={activeDropdown === item.id}
                 onToggle={handleDropdownToggle}
               />

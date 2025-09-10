@@ -1,8 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 
 // Components
-import Navbar from "./components/Navbar/Navbar;
-// import Footer from "./components/layout/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import ChampionSlider from "./components/sliders/ChampionSlider";
+import StudentSlider from "./components/sliders/StudentSlider";
+import ProgramCards from "./components/courses/ProgramCards";
+import TrendingCourses from "./components/courses/TrendingCourses";
+import CallbackForm from "./components/common/CallbackForm";
+import Footer from "./components/common/Footer";
+import LoginPage from "./components/auth/LoginPage";
 
 export default function App() {
   return (
@@ -14,20 +20,20 @@ export default function App() {
           element={
             <>
               <Navbar />
-              {/* <main className="pt-20">
+              <main className="pt-20">
                 <ChampionSlider />
                 <StudentSlider />
                 <ProgramCards />
                 <TrendingCourses />
                 <CallbackForm />
                 <Footer />
-              </main> */}
+              </main>
             </>
           }
         />
 
         {/* Login page route */}
-        {/* <Route path="/login" element={<LoginPage />} /> */}
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </div>
   );
