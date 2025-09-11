@@ -3,3 +3,13 @@
 body {
     background-color: #0f1824;
 }
+
+@media (max-width: 1030px) {
+    nav .leftNavbar ul {
+      display: none;
+    }
+
+    .manuBarIcon {
+        display: block;
+    }
+}

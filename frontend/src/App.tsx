@@ -9,6 +9,7 @@ import TrendingCourses from "./components/courses/TrendingCourses";
 import CallbackForm from "./components/common/CallbackForm";
 import Footer from "./components/common/Footer";
 import LoginPage from "./components/auth/LoginPage";
+import Register from "./pages/register";
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
 
         {/* Login page route */}
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );

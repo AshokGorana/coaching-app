@@ -34,11 +34,21 @@ export default function LoginPage(): JSX.Element {
         {/* Heading */}
         <div className="mb-25">
         <h2 className="text-4xl font-semibold text-center mb-2">
-          Login to account
+          Create your account
         </h2>
-        <p className="text-center text-sm text-gray-500">Welcome back! Please enter your details to continue.</p>
+        <p className="text-center text-sm text-gray-500">Join us today! Fill in your details to get started.</p>
         </div>
-        
+
+        {/* Mobile Number */}
+        <div className="mb-2">Full name</div>
+        <input
+          type="tel"
+          placeholder="Enter your name"
+          // value={name}
+          // onChange={handleNameChange}
+          className="w-full p-3 border rounded-lg mb-4 outline-none focus:ring focus:ring-blue-300"
+        />
+
         <div className="mb-2">Email address</div>
         <input
           type="tel"
@@ -63,7 +73,7 @@ export default function LoginPage(): JSX.Element {
           onClick={handleLogin}
           className="w-full cursor-pointer bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
         >
-          Login
+          Submit details
         </button>
 
         {/* Divider */}
@@ -79,7 +89,7 @@ export default function LoginPage(): JSX.Element {
           className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-lg py-3 hover:bg-gray-100 transition hover:text-black cursor-pointer"
         >
           <FcGoogle size={24} />
-          <span>Login with Google</span>
+          <span>Continue with Google</span>
         </button>
 
         {/* Footer */}
@@ -93,7 +103,7 @@ export default function LoginPage(): JSX.Element {
             T&C
           </a>.
         </p>
-        <p className="text-xs text-center mt-6 text-gray-500">Already have an account? <a href="/register" className="text-blue-600 underline-none">Register now</a></p>
+        <p className="text-xs text-center mt-6 text-gray-500">Already have an account? <a href="/login" className="text-blue-600 underline-none">Login here</a></p>
       </div>
     </div>
   );

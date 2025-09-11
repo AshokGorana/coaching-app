@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { navItems } from "./navConfig";
 import NavItem from "../navigation/NavItem";
 import NavButton from "./NavButton";
-// import MobileMenu from "./MobileMenu";
+import MobileMenu from "../navigation/MobileMenu";
 
 // agar navConfig me ye structure hai to uska type define kar lo
 interface NavItemType {
@@ -15,7 +15,7 @@ interface NavItemType {
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string>("");
-  const [, setMenuOpen] = useState<boolean>(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const navRef = useRef<HTMLElement | null>(null);
 
   const handleDropdownToggle = useCallback((itemId: string) => {
@@ -66,7 +66,7 @@ export default function Navbar() {
             <Menu size={24} />
           </button>
 
-          {/* <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} /> */}
+          <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
 
           <div className="text-white font-bold text-3xl tracking-wider cursor-pointer">
             TSG

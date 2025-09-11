@@ -80,7 +80,7 @@ const Slider = ({
   return (
     <div
       className="relative w-full mx-auto rounded-2xl overflow-hidden shadow-2xl"
-      onMouseEnter={() => setIsAutoPlaying(false)}
+      // onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}

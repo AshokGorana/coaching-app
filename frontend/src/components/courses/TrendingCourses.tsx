@@ -53,11 +53,11 @@ const TrendingCourses = (): JSX.Element => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-full border cursor-pointer ${
-                activeTab === tab
-                  ? "bg-white border-blue-500 text-blue-600"
-                  : "bg-white border-gray-300 text-gray-700"
-              }`}
+              className={`px-5 py-2 rounded-xl bg-white/10 text-white border border-white/20 backdrop-blur-md transition duration-300 hover:bg-white/20 hover:border-white/40 cursor-pointer
+                ${activeTab === tab
+                  ? "button-active"
+                  : "button-inactive"
+                }`}
             >
               {tab}
             </button>
@@ -73,8 +73,7 @@ const TrendingCourses = (): JSX.Element => {
             .map((course, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl shadow-sm flex flex-col justify-between"
-              >
+                className="bg-white/5 border border-white/15 rounded-xl p-6 backdrop-blur-md text-white">
                 {/* Live Tag */}
                 {course.live && (
                   <div className="flex items-center gap-2 bg-black text-white text-xs px-3 py-1 rounded-full w-fit mb-4">
@@ -86,7 +85,7 @@ const TrendingCourses = (): JSX.Element => {
                 <h3 className="text-lg font-semibold mb-4">{course.title}</h3>
 
                 {/* Details */}
-                <ul className="mb-6 space-y-2 text-gray-700">
+                <ul className="mb-6 space-y-2 text-slate-300 text-sm">
                   {course.details.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="text-green-500">✔</span> {item}

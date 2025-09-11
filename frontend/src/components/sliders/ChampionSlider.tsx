@@ -57,21 +57,23 @@ const ChampionSlider = (): JSX.Element => {
 
           {/* Right slider */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
+            <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl overflow-hidden">
               <Swiper
           modules={[Autoplay, Pagination, EffectFade]}
           pagination={{ clickable: true }}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           loop
           effect="fade"
+          fadeEffect={{ crossFade: true }}
           spaceBetween={20}
           slidesPerView={1}
+          autoHeight
           className="pb-10"
         >
                 <SwiperSlide>
                   <div className="flex justify-center items-center">
                     <img
-                      className="w-full max-w-[400px] h-full object-cover mb-10"
+                      className="w-full max-w-[400px] h-auto object-cover mb-10"
                       src="/images/slide1.webp"
                       alt="Students studying together"
                     />
@@ -80,7 +82,7 @@ const ChampionSlider = (): JSX.Element => {
                 <SwiperSlide>
                   <div className="flex justify-center items-center">
                     <img
-                      className="w-full max-w-[400px] h-full object-cover mb-10"
+                      className="w-full max-w-[400px] h-auto object-cover mb-10"
                       src="/images/slide2.webp"
                       alt="Online learning platform"
                     />
@@ -89,7 +91,7 @@ const ChampionSlider = (): JSX.Element => {
                 <SwiperSlide>
                   <div className="flex justify-center items-center">
                     <img
-                      className="w-full max-w-[400px] h-full object-cover mb-10"
+                      className="w-full max-w-[400px] h-auto object-cover mb-10"
                       src="/images/slide3.webp"
                       alt="Academic success celebration"
                     />
