@@ -58,13 +58,20 @@ export default function LoginPage(): JSX.Element {
           className="w-full p-3 border rounded-lg mb-4 outline-none focus:ring focus:ring-blue-300"
         />
 
-        {/* Signup Button */}
+        {/* Login Button */}
         <button
           onClick={handleLogin}
           className="w-full cursor-pointer bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
         >
           Login
         </button>
+
+         {/* remember and forgot password */}
+        <div className="flex justify-between items-center mt-5">
+          <div className="flex items-center gap-2"><input className="w-4 h-4 cursor-pointer" type="checkbox" />
+          Remember me</div>
+          <div className="text-blue-600 cursor-pointer">Forgot your password?</div>
+        </div>
 
         {/* Divider */}
         <div className="flex items-center my-4">

@@ -13,3 +13,11 @@ body {
         display: block;
     }
 }
+
+
+
+@media (min-width: 1030px) {
+    .manuBarIcon {
+        display: none;
+    }
+}

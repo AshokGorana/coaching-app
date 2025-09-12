@@ -18,7 +18,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps): JSX.Element => {
   return (
     <div
       className={`fixed inset-y-0 left-0 w-80 bg-[#111c2e] shadow-lg z-50 transform transition-transform duration-300 ease-in-out
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        ${isOpen ? 'translate-x-0' : '-translate-x-full'} z-[60]`}
     >
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-4 border-b">

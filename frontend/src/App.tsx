@@ -13,7 +13,7 @@ import Register from "./pages/register";
 
 export default function App() {
   return (
-    <div className="min-h-screen w-screen bg-[#0f1824]">
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#0f1824]">
       <Routes>
         {/* Home page route */}
         <Route
