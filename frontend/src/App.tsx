@@ -10,7 +10,7 @@ import CallbackForm from "./components/common/CallbackForm";
 import Footer from "./components/common/Footer";
 import LoginPage from "./components/auth/LoginPage";
 import Register from "./pages/register";
-import Testing from "./pages/testing";
+import Testing from "./pages/profileDropdown";
 
 export default function App() {
   return (

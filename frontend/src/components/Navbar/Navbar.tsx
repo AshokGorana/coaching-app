@@ -1,11 +1,9 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
 import { navItems } from "./navConfig";
 import NavItem from "../navigation/NavItem";
-import NavButton from "./NavButton";
 import MobileMenu from "../navigation/MobileMenu";
-import Testing from "../../pages/testing";
+import  ProfileDropdown  from "../../pages/ProfileDropdown";
 // agar navConfig me ye structure hai to uska type define kar lo
 interface NavItemType {
   id: string;
@@ -88,16 +86,9 @@ export default function Navbar() {
         </div>
 
         {/* Right Section */}
-        {/* <div className="flex items-center gap-4">
-          <NavButton variant="primary">Talk to us</NavButton>
-          <NavButton className="cursor-pointer" variant="secondary">
-          < Link > 
-          </NavButton>
-        </div> */}
-
-      <div>
-        < Testing />
-      </div>
+        <div className="flex items-center bg-white cursor-pointer gap-4">
+          <ProfileDropdown />
+        </div>
       </nav>
     </header>
   );
