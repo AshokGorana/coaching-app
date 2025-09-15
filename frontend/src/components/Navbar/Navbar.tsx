@@ -5,7 +5,7 @@ import { navItems } from "./navConfig";
 import NavItem from "../navigation/NavItem";
 import NavButton from "./NavButton";
 import MobileMenu from "../navigation/MobileMenu";
-
+import Testing from "../../pages/testing";
 // agar navConfig me ye structure hai to uska type define kar lo
 interface NavItemType {
   id: string;
@@ -88,12 +88,16 @@ export default function Navbar() {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4">
           <NavButton variant="primary">Talk to us</NavButton>
           <NavButton className="cursor-pointer" variant="secondary">
-            <Link to="/login">Login</Link>
+          < Link > 
           </NavButton>
-        </div>
+        </div> */}
+
+      <div>
+        < Testing />
+      </div>
       </nav>
     </header>
   );
