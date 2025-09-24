@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 // Components
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/NavbarSection";
 import ChampionSlider from "./components/sliders/ChampionSlider";
 import StudentSlider from "./components/sliders/StudentSlider";
 import ProgramCards from "./components/courses/ProgramCards";

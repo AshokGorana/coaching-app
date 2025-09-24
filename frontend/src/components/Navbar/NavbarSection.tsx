@@ -3,12 +3,12 @@ import { Menu } from "lucide-react";
 import { navItems } from "./navConfig";
 import NavItem from "../navigation/NavItem";
 import MobileMenu from "../navigation/MobileMenu";
-import  ProfileDropdown  from "../../pages/ProfileDropdown";
-// agar navConfig me ye structure hai to uska type define kar lo
+import ProfileDropdown from "../../pages/profileDropdown";
+
 interface NavItemType {
   id: string;
   label: string;
-  items?: string[]; // agar submenu string[] hai, warna type ko adjust karo
+  items?: string[];
 }
 
 export default function Navbar() {
@@ -93,3 +93,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+
