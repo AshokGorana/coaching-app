@@ -13,7 +13,7 @@ export default function ProfileDropdown() {
           <Avatar.Root className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#4985ed]">
             < User />
             <Avatar.Fallback className="text-sm font-medium text-gray-600">
-              AG
+              
             </Avatar.Fallback>
           </Avatar.Root>
         </button>
