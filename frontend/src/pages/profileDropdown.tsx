@@ -3,6 +3,7 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import * as Avatar from "@radix-ui/react-avatar";
 import { LogOut, User, Settings, Book } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ProfileDropdown() {
   return (
@@ -29,7 +30,7 @@ export default function ProfileDropdown() {
           </DropdownMenu.Label>
 
           <DropdownMenu.Item className="flex items-center gap-2 px-2 py-2 text-sm text-white rounded-md cursor-pointer hover:bg-[#23272f] hover:outline-none">
-          <a className="flex gap-2" href="/profile"> <User className="w-4 h-4" /> Profile </a>
+          <Link className="flex gap-2" to="/profile"> <User className="w-4 h-4" /> Profile </Link>
           </DropdownMenu.Item>
 
           <DropdownMenu.Item className="flex items-center gap-2 px-2 py-2 text-sm text-white rounded-md cursor-pointer hover:bg-[#23272f] hover:outline-none">
