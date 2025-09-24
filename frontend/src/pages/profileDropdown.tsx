@@ -2,7 +2,7 @@
 
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import * as Avatar from "@radix-ui/react-avatar";
-import { LogOut, User, Settings } from "lucide-react";
+import { LogOut, User, Settings, Book } from "lucide-react";
 
 export default function ProfileDropdown() {
   return (
@@ -13,7 +13,6 @@ export default function ProfileDropdown() {
           <Avatar.Root className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#4985ed]">
             < User />
             <Avatar.Fallback className="text-sm font-medium text-gray-600">
-              
             </Avatar.Fallback>
           </Avatar.Root>
         </button>
@@ -30,12 +29,17 @@ export default function ProfileDropdown() {
           </DropdownMenu.Label>
 
           <DropdownMenu.Item className="flex items-center gap-2 px-2 py-2 text-sm text-white rounded-md cursor-pointer hover:bg-[#23272f] hover:outline-none">
-            <User className="w-4 h-4" /> Profile
+          <a className="flex gap-2" href="/profile"> <User className="w-4 h-4" /> Profile </a>
+          </DropdownMenu.Item>
+
+          <DropdownMenu.Item className="flex items-center gap-2 px-2 py-2 text-sm text-white rounded-md cursor-pointer hover:bg-[#23272f] hover:outline-none">
+            <Book className="w-4 h-4" /> My Courses
           </DropdownMenu.Item>
 
           <DropdownMenu.Item className="flex items-center gap-2 px-2 py-2 text-sm text-white rounded-md cursor-pointer hover:bg-[#23272f] hover:outline-none">
             <Settings className="w-4 h-4" /> Settings
           </DropdownMenu.Item>
+
 
           <DropdownMenu.Separator className="my-1 h-px bg-[#282c34]" />
 

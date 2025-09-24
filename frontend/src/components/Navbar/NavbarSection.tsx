@@ -86,7 +86,7 @@ export default function Navbar() {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center bg-white cursor-pointer gap-4">
+        <div className="flex items-center cursor-pointer gap-4">
           <ProfileDropdown />
         </div>
       </nav>
