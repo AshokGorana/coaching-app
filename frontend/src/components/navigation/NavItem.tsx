@@ -1,5 +1,5 @@
-// import HoverSection from "./HoverSection";
-import type { JSX } from "react";
+import HoverSection from "./HoverSection";
+import type { JSX, KeyboardEvent } from "react";
 
 interface NavItemProps {
   id: string;
@@ -12,7 +12,7 @@ interface NavItemProps {
 export default function NavItem({
   id,
   label,
-  items: _items,
+  items,
   isActive,
   onToggle,
 }: NavItemProps): JSX.Element {
@@ -20,7 +20,7 @@ export default function NavItem({
     onToggle(id);
   };
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
       onToggle(id);
@@ -48,7 +48,7 @@ export default function NavItem({
         )}
       </button>
 
-      {/* <HoverSection items={items} isVisible={isActive} /> */}
+      <HoverSection items={items} isVisible={isActive} />
     </li>
   );
 }

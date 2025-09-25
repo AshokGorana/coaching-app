@@ -26,7 +26,7 @@ export default function ProfilePage(): JSX.Element {
                         <input
                             type="tel"
                             placeholder="Enter your name"
-                            // value={name}
+                            value={"Ashok Gorana"}
                             // onChange={handleNameChange}
                             className="w-full p-3 bg-gray-800 border rounded-lg mb-4 outline-none focus:ring focus:ring-blue-300"
                         />
@@ -34,8 +34,8 @@ export default function ProfilePage(): JSX.Element {
                         <div className="mb-2">Email address</div>
                         <input
                             type="tel"
-                            placeholder="ashokgorana9001@gmail.com"
-                            // value={name}
+                            placeholder="Enter your email"
+                            value={"ashokgorana9001@gmail.com"}
                             // onChange={handleNameChange}
                             className="w-full p-3 bg-gray-800 border rounded-lg mb-4 outline-none focus:ring focus:ring-blue-300"
                         />
