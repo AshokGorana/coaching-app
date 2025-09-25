@@ -17,7 +17,7 @@ export default function ProfilePage(): JSX.Element {
             <div className="user-info mt-5 flex justify-center py-3">
                 <div className="w-3xl flex flex-col justify-center">
                     <div className="profile-image flex flex-col gap-3 items-center py-3">
-                        <img className="w-25 h-25 rounded-full" src="./../../../public/profileIcon/profile_image.jpg" alt="profile_image" />
+                        <img className="w-25 h-25 rounded-full" src="./../../public/profileIcon/profile_image.jpg" alt="profile_image" />
                         <button className="bg-blue-500 px-4 py-1 rounded-md">Save changes</button>
                     </div>
 
