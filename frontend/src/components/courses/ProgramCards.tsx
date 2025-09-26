@@ -11,7 +11,7 @@ const programs = [
     img: "https://asset.allen.in/c07d22aa-0dec-402c-827f-424cef392ba9/original.webp",
   },
   {
-    title: "Grade 6-10",
+    title: "Grade 10-12",
     img: "https://asset.allen.in/50fd06a0-4b73-4fda-abd2-c1dcc21c0229/original.webp",
   },
 ];
