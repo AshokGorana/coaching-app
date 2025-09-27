@@ -3,11 +3,11 @@ import type { JSX } from "react";
 
 const programs = [
   {
-    title: "JEE",
+    title: "Govt Services",
     img: "https://asset.allen.in/4b516fee-c744-433e-9476-3cac4cd0cc0e/original.webp",
   },
   {
-    title: "NEET",
+    title: "NET",
     img: "https://asset.allen.in/c07d22aa-0dec-402c-827f-424cef392ba9/original.webp",
   },
   {

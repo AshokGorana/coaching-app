@@ -14,12 +14,9 @@ const Footer = (): JSX.Element => {
               <li>About us</li>
               <li>Blog</li>
               <li>News</li>
-              <li>MyExam EduBlogs</li>
               <li>Privacy policy</li>
               <li>Public notice</li>
               <li>Careers</li>
-              <li>Dhoni Inspires NEET Aspirants</li>
-              <li>Dhoni Inspires JEE Aspirants</li>
             </ul>
           </div>
 
@@ -36,9 +33,9 @@ const Footer = (): JSX.Element => {
           <div>
             <h3 className="font-semibold mb-2">Popular goals</h3>
             <ul className="space-y-1 text-sm">
-              <li>NEET Coaching</li>
-              <li>JEE Coaching</li>
-              <li>6th to 10th</li>
+              <li>Centeral Services</li>
+              <li>State Services</li>
+              <li>10th to 12th</li>
             </ul>
           </div>
 
@@ -48,37 +45,29 @@ const Footer = (): JSX.Element => {
               <li>Online Courses</li>
               <li>Distance Learning</li>
               <li>Online Test Series</li>
-              <li>International Olympiads Online Course</li>
-              <li>NEET Test Series</li>
-              <li>JEE Test Series</li>
-              <li>JEE Main Test Series</li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-2">Centers</h3>
             <ul className="space-y-1 text-sm">
-              <li>Kota</li>
-              <li>Bangalore</li>
-              <li>Indore</li>
-              <li>Delhi</li>
-              <li>More centres</li>
+              <li>Pali</li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-2">Exam information</h3>
             <ul className="space-y-1 text-sm">
-              <li>JEE Main</li>
-              <li>JEE Advanced</li>
-              <li>NEET UG</li>
-              <li>CBSE</li>
-              <li>NCERT Solutions</li>
-              <li>Olympiad</li>
-              <li>NEET 2025 Results</li>
-              <li>NEET 2025 Answer Key</li>
-              <li>NEET College Predictor</li>
-              <li>NEET 2025 Counselling</li>
+              <li>RAS</li>
+              <li>SSC</li>
+              <li>LIC & other Insurance</li>
+              <li>Delhi Police</li>
+              <li>Railway</li>
+              <li>FCI</li>
+              <li>IB</li>
+              <li>Army</li>
+              <li>Airforce</li>
+              <li>NDA/CDS</li>
             </ul>
           </div>
         </div>

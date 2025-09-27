@@ -36,7 +36,7 @@ export default function NavItem({
         onKeyDown={handleKeyDown}
         className={`
           relative cursor-pointer px-4 py-2 rounded-lg transition-all duration-200 
-          hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-[#0f1824]
+          hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-[#0f1824] cursor-pointer
           ${isActive ? "text-blue-400" : "text-white hover:text-blue-200"}
         `}
         aria-expanded={isActive}

@@ -1,7 +1,8 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import { Menu } from "lucide-react";
-import { navItems } from "./navConfig";
+import { navItems, allenStyleMenuItems } from "./navConfig";
 import NavItem from "../navigation/NavItem";
+import MenuItem from "../navigation/MenuItem";
 import MobileMenu from "../navigation/MobileMenu";
 import ProfileDropdown from "../../pages/profileDropdown";
 
@@ -70,8 +71,19 @@ export default function Navbar() {
             TSG
           </div>
 
-          {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-2" role="menubar">
+          {/* Desktop Navigation - Allen Style */}
+          <div className="hidden cursor-pointer lg:flex items-center gap-1" role="menubar">
+            {allenStyleMenuItems.map((item) => (
+              <MenuItem
+                key={item.id}
+                item={item}
+                className="relative"
+              />
+            ))}
+          </div>
+
+          {/* Fallback for smaller screens - Original Style */}
+          <ul className="hidden md:flex lg:hidden items-center gap-2" role="menubar">
             {navItems.map((item: NavItemType) => (
               <NavItem
                 key={item.id}

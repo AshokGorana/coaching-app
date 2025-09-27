@@ -9,9 +9,9 @@ import "swiper/css/effect-fade";
 
 const ChampionSlider = (): JSX.Element => {
   const examButtons = [
-    { label: "JEE", active: true },
-    { label: "NEET", active: false },
-    { label: "Grade 6-10", active: false },
+    { label: "Govt Services", active: true },
+    { label: "Defence Forces", active: false },
+    { label: "Grade 10-12", active: false },
   ];
 
   return (
@@ -37,7 +37,7 @@ const ChampionSlider = (): JSX.Element => {
               {examButtons.map((exam) => (
                 <button
                   key={exam.label}
-                  className={`px-6 sm:px-8 py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-[#0f1824] ${
+                  className={`px-6 sm:px-8 py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-[#0f1824] cursor-pointer ${
                     exam.active
                       ? "bg-white text-[#0f1824] shadow-lg"
                       : "border-2 border-white text-white hover:bg-white hover:text-[#0f1824]"
